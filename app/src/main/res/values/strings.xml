@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">好好玩</string>
+    <string name="OC_APPNAME">好好玩</string>
+    <string name="OC_APPFULLNAME">好好玩</string>
+    <string name="oc_gd_splash_text">开始</string>
+    <string name="progress_btn_progess">%</string>
+    <string name="progress_btn_start">启动</string>
+    <string name="progress_btn_install">安装</string>
+    <string name="progress_btn_download">下载</string>
+    <string name="progress_btn_update">更新</string>
+    <string name="progress_btn_wait">等待中</string>
+    <string name="progress_btn_resume">继续</string>
+    <string name="progress_btn_intalling">安装中</string>
+    <string name="progress_pause">暂停</string>
+    <string name="stop">暂停</string>
+    <string name="retry">重试</string>
+    <string name="oc_resume">继续</string>
+    <string name="oc_finish">完成</string>
+    <string name="oc_blank"></string>
+    <string name="oc_app_recommend">推荐</string>
+    <string name="oc_popular_app_info_title">热门</string>
+    <string name="oc_reload">点击重新加载</string>
+    <string name="oc_cancel">取消</string>
+    <string name="oc_download">下载</string>
+    <string name="waiting">等待</string>
+    <string name="intalling">安装中</string>
+    <string name="oc_no_enough_room">没有足够的空间</string>
+    <string name="header_hint_refresh_time">更新于：</string>
+    <string name="oc_btm_recommend">推荐</string>
+    <string name="oc_btm_new">最新</string>
+    <string name="oc_btm_manager">管理</string>
+    <string name="oc_error_fragment_title">错误</string>
+    <string name="dlg_waiting">正在加载，请稍候&#8230;</string>
+    <string name="dlg_no_network">网络不给力,是否打开网络设置检查</string>
+    <string name="dlg_not_wifi_tv">您当前未使用WLAN网络,如继续下载将消耗手机流量,是否继续下载?</string>
+    <string name="dlg_btn_ok">确定</string>
+    <string name="dlg_btn_cancel">取消</string>
+    <string name="dlg_tip_title">温馨提示</string>
+
+    <!-- 设置 -->
+    <string name="setting_download_manager">下载管理</string>
+    <string name="setting_update_manager">更新管理</string>
+    <string name="setting_app_download_update_manager">下载更新管理</string>
+    <string name="setting_base">基本设置</string>
+    <string name="setting_other">其他</string>
+    <string name="setting_sex">男女有别</string>
+    <string name="setting_root">下载后自动安装</string>
+    <string name="setting_wifi">wifi联网时后台下载（免流量/免费）</string>
+    <string name="setting_sprite">禁闭精灵2天</string>
+    <string name="setting_no_wifi_tip">非wifi联网时下载提示</string>
+    <string name="setting_flow_window">是否开启悬浮窗</string>
+    <string name="setting_check_update">检查更新</string>
+    <string name="setting_about_us">关于</string>
+    <string name="setting_about_us_content">关于OCMarket</string>
+    <string name="setting_upload_app">我要提交应用</string>
+    <!-- 设置 -->
+
+
+    <!-- tab 标题 -->
+    <string name="tab_my_favorite_title">我喜欢</string>
+    <string name="tab_new_apps_title">最新</string>
+    <string name="tab_top_list_title">榜单</string>
+    <string name="tab_update_apps_title">更新管理</string>
+    <string name="tab_download_manager_title">下载管理</string>
+    <!-- tab 标题 -->
+    <!-- action bar 标题 -->
+    <string name="action_bar_search">搜索</string>
+    <string name="action_bar_download">下载</string>
+    <string name="action_bar_settings">设置</string>
+
+    <!-- action bar 标题 -->
+    <string name="download_num">人已经安装</string>
+    <string name="wan">万</string>
+    <string name="loading">加载中</string>
+    <string name="no_more">无更多信息</string>
+    <string name="list_empty">无展示内容</string>
+    <string name="setting_title">设置</string>
+    <string name="setting_suggest">我要提意见</string>
+    <string name="male">男</string>
+    <string name="female">女</string>
+    <string name="app_list_title">应用列表</string>
+    <string name="no_update_version">当前版本已经是最新版本</string>
+    <string name="about_us_content">关于我们的内容介绍。。。</string>
+    <string name="no_update_apps">没有需要更新的应用</string>
+    <string name="slow_network">貌似网络不是很给力，请重试</string>
+    <string name="pull_to_refresh_pull_label">下拉刷新</string>
+    <string name="pull_to_refresh_release_label">松开刷新</string>
+    <string name="pull_to_refresh_refreshing_label">正在刷新&#8230;</string>
+
+    <!-- Just use standard Pull Down String when pulling up. These can be set for languages which require it -->
+    <string name="pull_to_refresh_from_bottom_pull_label">加载更多</string>
+    <string name="pull_to_refresh_from_bottom_release_label">松开加载更多</string>
+    <string name="pull_to_refresh_from_bottom_refreshing_label">@string/pull_to_refresh_refreshing_label</string>
+    <string name="toast_app_no_exits">该应用已删除或被停用!</string>
+    <string name="errot_no_market">未安装应用市场,操作失败</string>
+    <string name="toast_tip_mobile_data">您正在使用移动网络，建议切换到WIFI</string>
+    <string name="toast_tip_no_net">请检查网络设置</string>
+    <string name="downloaded">已下载</string>
+
+    <!-- Dialog文字设置 -->
+    <string name="dialog_delete_or_not">确定要删除辛苦下载的游戏吗？</string>
+    <string name="yes">确定</string>
+    <string name="cancel">取消</string>
+    <string name="delete_task">删除任务</string>
+    <string name="delete_history">删除此条记录</string>
+    <string name="download_completed">已完成</string>
+
+    <!-- 下载管理文字设置 -->
+    <string name="download_task">下载任务</string>
+    <string name="download_all_start">全部开始</string>
+    <string name="download_all_pause">全部暂停</string>
+    <string name="app_detail_title">应用详情</string>
+    <string name="download_history">下载记录</string>
+    <string name="download_history_clear">清空记录</string>
+    <string name="download_history_clear_item">删除记录</string>
+
+    <!-- 删除下载记录Dialog设置 -->
+    <string name="delete_download_history_title">清空记录</string>
+    <string name="delete_download_history_content">是否清空下载记录?清空应用不会卸载应用和删除安装包。</string>
+    <string name="delete_download_history_btn_cancel">取消</string>
+    <string name="delete_download_history_btn_yes">清空</string>
+
+    <!-- 无网络界面设置 -->
+    <string name="none_network_title">好好玩游戏市场</string>
+    <string name="none_network_warning">警告</string>
+    <string name="none_network_warning_text">请检查网络设置</string>
+    <string name="none_network_manager_app_tips">无网络时也能管理应用</string>
+    <string name="none_network_manager_app">管理应用</string>
+    <string name="ceshi">Android是一种基于Linux的自由及开放源代码的操作系统，主要使用于移动设备，如智能手机和平板电脑，由Google公司和开放手机联盟领导及开发。尚未有统一中文名称，中国大陆地区较多人使用“安卓”或“安致”。Android操作系统最初由Andy Rubin开发，主要支持手机。2005年8月由Google收购注资。2007年11月，Google与84家硬件制造商、软件开发商及电信营运商组建开放手机联盟共同研发改良Android系统。随后Google以Apache开源许可证的授权方式，发布了Android的源代码。第一部Android智能手机发布于2008年10月。Android逐渐扩展到平板电脑及其他领域上，如电视、数码相机、游戏机等。2011年第一季度，Android在全球的市场份额首次超过塞班系统，跃居全球第一。 2013年的第四季度，Android平台手机的全球市场份额已经达到78.1%。[1] 2013年09月24日谷歌开发的操作系统Android在迎来了5岁生日，全世界采用这款系统的设备数量已经达到10亿台。</string>
+    <string name="flow_window_tips">Only those who will risk going too far can possibly find out how far one can go.</string>
+    <string name="oc_btm_new_top">最新</string>
+    <string name="oc_btm_topic">主题</string>
+
+</resources>

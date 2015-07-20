@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/download_manager_list_background"
+    android:orientation="vertical" >
+
+    <include
+        layout="@layout/oc_loading_view"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- 基本设置区 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/oc_popular_title_bar_height"
+                    android:background="@drawable/bg_gray"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_alignParentTop="true"
+                        android:background="@color/gray_line"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:drawableLeft="@drawable/icon_tip_2"
+                        android:drawablePadding="5dp"
+                        android:paddingLeft="@dimen/oc_popular_padding_left"
+                        android:text="@string/setting_app_download_update_manager"
+                        android:textColor="@color/text_color_black"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/gray_line"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/download_item_bg_selector"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:id="@+id/download_manager"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="50dip" >
+
+                        <ImageView
+                            android:id="@+id/download_manager_iv"
+                            android:layout_width="72dp"
+                            android:layout_height="72dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/icon_1_3"
+                            android:scaleType="centerInside"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/download_manager_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="14dp"
+                            android:layout_toRightOf="@id/download_manager_iv"
+                            android:text="@string/setting_download_manager"
+                            android:textColor="@color/text_color_black"
+                            android:textSize="@dimen/textsize_14sp" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/gray_line" />
+
+                    <RelativeLayout
+                        android:id="@+id/update_manager"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="50dip" >
+
+                        <ImageView
+                            android:id="@+id/update_manager_iv"
+                            android:layout_width="72dp"
+                            android:layout_height="72dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/icon_1_3"
+                            android:scaleType="centerInside"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/update_manager_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="14dp"
+                            android:layout_toRightOf="@id/update_manager_iv"
+                            android:text="@string/setting_update_manager"
+                            android:textColor="@color/text_color_black"
+                            android:textSize="@dimen/textsize_14sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/gray_line"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/oc_popular_title_bar_height"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_alignParentTop="true"
+                        android:background="@color/gray_line"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:drawableLeft="@drawable/icon_tip_1"
+                        android:drawablePadding="5dp"
+                        android:paddingLeft="@dimen/oc_popular_padding_left"
+                        android:text="@string/setting_base"
+                        android:textColor="@color/text_color_black"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/gray_line"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/gray_line"
+                    android:visibility="gone" />
+                <!-- root设置 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/download_item_bg_selector"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:id="@+id/download_set_RL"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="50dip" >
+
+                        <ImageView
+                            android:id="@+id/download_set_iv"
+                            android:layout_width="72dp"
+                            android:layout_height="72dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/icon_1_3"
+                            android:scaleType="centerInside"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/download_set_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="14dp"
+                            android:layout_toRightOf="@id/download_set_iv"
+                            android:text="@string/setting_root"
+                            android:textColor="@color/text_color_black"
+                            android:textSize="@dimen/textsize_14sp" />
+
+                        <CheckBox
+                            android:id="@+id/ck_root"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="5dp"
+                            android:button="@drawable/checkbox_bg"
+                            android:checked="true"
+                            android:textColor="@color/text_color_black" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/gray_line" />
+                    <!-- 自动下载开关 -->
+
+                    <RelativeLayout
+                        android:id="@+id/auto_load_set_RL"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="50dip" >
+
+                        <ImageView
+                            android:id="@+id/auto_load_set_iv"
+                            android:layout_width="72dp"
+                            android:layout_height="72dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/icon_1_4"
+                            android:scaleType="centerInside"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/auto_load_set_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="14dp"
+                            android:layout_toRightOf="@id/auto_load_set_iv"
+                            android:text="@string/setting_wifi"
+                            android:textColor="@color/text_color_black"
+                            android:textSize="@dimen/textsize_14sp" />
+
+                        <CheckBox
+                            android:id="@+id/ck_auto_load"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="5dp"
+                            android:button="@drawable/checkbox_bg"
+                            android:checked="true" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/gray_line"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/gray_line" />
+                    <!-- 非wifi提醒设置 -->
+
+                    <RelativeLayout
+                        android:id="@+id/no_wifi_set_RL"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="50dip" >
+
+                        <ImageView
+                            android:id="@+id/no_wifi_set_iv"
+                            android:layout_width="72dp"
+                            android:layout_height="72dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/icon_1_6"
+                            android:scaleType="centerInside"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/no_wifi_set_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="14dp"
+                            android:layout_toRightOf="@id/no_wifi_set_iv"
+                            android:text="@string/setting_no_wifi_tip"
+                            android:textColor="@color/text_color_black"
+                            android:textSize="@dimen/textsize_14sp" />
+
+                        <CheckBox
+                            android:id="@+id/ck_no_wifi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="5dp"
+                            android:button="@drawable/checkbox_bg"
+                            android:checked="true" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/gray_line" />
+                    <!-- 是否启动悬浮窗 -->
+
+                    <RelativeLayout
+                        android:id="@+id/flow_window"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="50dip" >
+
+                        <TextView
+                            android:id="@+id/tv_flow_window"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="14dp"
+                            android:text="@string/setting_flow_window"
+                            android:textColor="@color/text_color_black"
+                            android:textSize="@dimen/textsize_14sp" />
+
+                        <CheckBox
+                            android:id="@+id/cb_flow_window"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="5dp"
+                            android:button="@drawable/checkbox_bg"
+                            android:checked="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/gray_line"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/oc_popular_title_bar_height"
+                    android:background="@drawable/bg_gray"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_alignParentTop="true"
+                        android:background="@color/gray_line"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:drawableLeft="@drawable/icon_tip_2"
+                        android:drawablePadding="5dp"
+                        android:paddingLeft="@dimen/oc_popular_padding_left"
+                        android:text="@string/setting_other"
+                        android:textColor="@color/text_color_black"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/gray_line"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/gray_line"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/download_item_bg_selector"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:id="@+id/rl_check_update_mine"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="50dip" >
+
+                        <ImageView
+                            android:id="@+id/update_notify_set_iv"
+                            android:layout_width="72dp"
+                            android:layout_height="72dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/icon_1_7"
+                            android:scaleType="centerInside"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/update_notify_set_tv"
+                            android:layout_width="170dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="14dp"
+                            android:layout_toRightOf="@id/update_notify_set_iv"
+                            android:text="@string/setting_check_update"
+                            android:textColor="@color/text_color_black"
+                            android:textSize="@dimen/textsize_14sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="center"
+                            android:src="@drawable/icon_detail_rightarrow" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/gray_line" />
+                    <!-- 关于 -->
+
+                    <RelativeLayout
+                        android:id="@+id/rl_about_us"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="50dip" >
+
+                        <ImageView
+                            android:id="@+id/about_us_set_iv"
+                            android:layout_width="72dp"
+                            android:layout_height="72dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/icon_1_8"
+                            android:scaleType="centerInside"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/about_us_set_tv"
+                            android:layout_width="170dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="14dp"
+                            android:layout_toRightOf="@id/about_us_set_iv"
+                            android:text="@string/setting_about_us"
+                            android:textColor="@color/text_color_black"
+                            android:textSize="@dimen/textsize_14sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="center"
+                            android:src="@drawable/icon_detail_rightarrow" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/gray_line"
+                    android:visibility="gone" />
+                <!-- 提交应用 -->
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="50dip"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:id="@+id/upload_app_set_iv"
+                        android:layout_width="72dp"
+                        android:layout_height="72dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/icon_1_9"
+                        android:scaleType="centerInside"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/upload_app_set_tv"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="14dp"
+                        android:layout_toRightOf="@id/upload_app_set_iv"
+                        android:text="@string/setting_upload_app"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="center"
+                        android:src="@drawable/icon_detail_rightarrow" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/gray_line"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="15dp"
+    android:orientation="vertical"
+    android:padding="0dp" >
+
+    <TextView
+        android:id="@+id/dlg_title_tv"
+        android:background="@drawable/dlg_cmmn_title"
+        style="@style/DialogTitleStyle" />
+
+    <ImageView
+        android:id="@+id/interval_iv"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="6dp"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        android:src="@drawable/dlg_driver" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"        
+        android:orientation="vertical"
+        android:background="@drawable/dlg_bg"
+        android:padding="0dp" >
+
+        <!-- Message -->
+
+        <RelativeLayout
+            android:id="@+id/dlg_content_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+             >
+
+        </RelativeLayout>
+        <!-- 分割线 -->
+
+        
+
+        <!-- Button -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="18dp" >
+
+            <Button
+                android:id="@+id/dlg_cancel_btn"
+                style="@style/DialogBtnStyle"
+                android:layout_marginRight="20dp" >
+            </Button>
+
+            <Button
+                android:id="@+id/dlg_ok_btn"
+                style="@style/DialogBtnStyle" >
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

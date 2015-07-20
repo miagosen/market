@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/detail_icon_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <RelativeLayout
+            android:layout_width="68dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/detail_recommend_icon"
+                android:layout_width="66dp"
+                android:layout_height="66dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/ic_launcher"
+                android:layout_centerHorizontal="true"
+                android:clickable="true" />
+
+            <TextView
+                android:id="@+id/detail_recommend_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/detail_recommend_icon"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:singleLine="true"
+                android:text="死亡扳机"
+                android:textColor="#FF333333"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="68dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/detail_recommend_icon2"
+                android:layout_width="66dp"
+                android:layout_height="66dp"
+                android:layout_marginTop="6dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/ic_launcher"
+                android:clickable="true" />
+
+            <TextView
+                android:id="@+id/detail_recommend_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/detail_recommend_icon2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:singleLine="true"
+                android:text="死亡扳机"
+                android:textColor="#FF333333"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="68dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/detail_recommend_icon3"
+                android:layout_width="66dp"
+                android:layout_height="66dp"
+                android:layout_marginTop="6dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/ic_launcher"
+                android:clickable="true" />
+
+            <TextView
+                android:id="@+id/detail_recommend_text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/detail_recommend_icon3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:singleLine="true"
+                android:text="死亡扳机"
+                android:textColor="#FF333333"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="68dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/detail_recommend_icon4"
+                android:layout_width="66dp"
+                android:layout_height="66dp"
+                android:layout_marginTop="6dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/ic_launcher"
+                android:clickable="true" />
+
+            <TextView
+                android:id="@+id/detail_recommend_text4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/detail_recommend_icon4"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:singleLine="true"
+                android:text="死亡扳机"
+                android:textColor="#FF333333"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+</LinearLayout>

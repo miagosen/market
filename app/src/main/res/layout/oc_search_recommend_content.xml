@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/search_recommend_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/bg_white">
+    
+    <LinearLayout
+        android:id="@+id/search_content"
+        android:layout_width="match_parent"
+        android:layout_height="24dp" 
+        android:orientation="horizontal"
+        android:background="@drawable/bg_gray">
+        
+        <ImageView 
+            android:layout_width="5dp"
+            android:layout_height="21dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="6dp"
+            android:background="@drawable/icon_tip_1"
+            />
+        
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="21dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="6dp"
+            android:textColor="#737373"
+            android:text="热门搜索应用"
+            />
+        
+    </LinearLayout>
+    <TextView
+        android:id="@+id/search_icon_content_bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/search_content"
+        android:background="#D7D7D7"
+        />
+    <LinearLayout
+        android:id="@+id/search_icon_content"
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:orientation="horizontal" 
+        android:layout_below="@id/search_icon_content_bottom_line">
+
+        <RelativeLayout
+            android:layout_width="58dp"
+            android:layout_height="wrap_content" 
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/search_recommend_icon"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/ic_launcher"
+                android:layout_centerHorizontal="true"
+                android:clickable="true" />
+
+            <TextView
+                android:id="@+id/search_recommend_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/search_recommend_icon"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:singleLine="true"
+                android:text="死亡扳机"
+                android:textColor="#FF333333"
+                android:textSize="12sp" />
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:layout_width="58dp"
+            android:layout_height="wrap_content" 
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/search_recommend_icon2"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="6dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/ic_launcher"
+                android:clickable="true" />
+
+            <TextView
+                android:id="@+id/search_recommend_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/search_recommend_icon2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:singleLine="true"
+                android:text="死亡扳机"
+                android:textColor="#FF333333"
+                android:textSize="12sp" />
+        </RelativeLayout>
+        
+        
+         <RelativeLayout
+            android:layout_width="58dp"
+            android:layout_height="wrap_content" 
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/search_recommend_icon3"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="6dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/ic_launcher"
+                android:clickable="true" />
+
+            <TextView
+                android:id="@+id/search_recommend_text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/search_recommend_icon3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:singleLine="true"
+                android:text="死亡扳机"
+                android:textColor="#FF333333"
+                android:textSize="12sp" />
+        </RelativeLayout>
+        
+         
+         
+         
+          <RelativeLayout
+            android:layout_width="58dp"
+            android:layout_height="wrap_content" 
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/search_recommend_icon4"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="6dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/ic_launcher"
+                android:clickable="true" />
+
+            <TextView
+                android:id="@+id/search_recommend_text4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/search_recommend_icon4"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:singleLine="true"
+                android:text="死亡扳机"
+                android:textColor="#FF333333"
+                android:textSize="12sp" />
+        </RelativeLayout>
+        
+          
+          <RelativeLayout
+            android:layout_width="58dp"
+            android:layout_height="wrap_content" 
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/search_recommend_icon5"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="6dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/ic_launcher"
+                android:clickable="true" />
+
+            <TextView
+                android:id="@+id/search_recommend_text5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/search_recommend_icon5"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:singleLine="true"
+                android:text="死亡扳机"
+                android:textColor="#FF333333"
+                android:textSize="12sp" />
+        </RelativeLayout>
+         
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/search_words_title_top_line"
+        android:layout_width="match_parent"
+        android:layout_marginTop="3dp"
+        android:layout_height="1px"
+        android:layout_below="@id/search_icon_content"
+        android:background="#D7D7D7"
+        />
+    
+    
+     <LinearLayout
+        android:id="@+id/hot_words_title"
+        android:layout_width="match_parent"
+        android:layout_height="24dp" 
+        android:orientation="horizontal"
+         android:layout_below="@id/search_words_title_top_line"
+        android:background="@drawable/bg_gray">
+        
+        <ImageView 
+            android:layout_width="5dp"
+            android:layout_height="21dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="6dp"
+            android:background="@drawable/icon_tip_2"
+            />
+        
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="21dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="6dp"
+            android:textColor="#737373"
+            android:text="热门关键字"
+            />
+        
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/search_words_title_bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/hot_words_title"
+        android:background="#D7D7D7"
+        />
+    
+    <LinearLayout
+        android:id="@+id/hot_words_cotent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:layout_below="@id/search_words_title_bottom_line"
+        android:orientation="vertical">
+
+	</LinearLayout>
+
+</RelativeLayout>

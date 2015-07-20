@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/small_window_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_float_window"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/oc_blank"
+        android:src="@drawable/oc_float_window_icon"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/appmgr_new_textbg"
+        android:textSize="24sp"
+        android:layout_toRightOf="@+id/iv_float_window"
+        android:paddingLeft="4dp"
+        android:id="@+id/tv_float_window_num"
+        />
+</RelativeLayout>

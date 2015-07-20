@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:id="@android:id/background">
+        <shape>
+            <corners android:radius="10dip" />
+
+            <stroke
+                android:width="1px"
+                android:color="@color/download_button_stroke" />
+
+            <gradient
+                android:angle="270"
+                android:centerColor="@color/download_button_solid"
+                android:centerY="0.75"
+                android:endColor="@color/download_button_solid"
+                android:startColor="@color/download_button_solid" />
+        </shape>
+    </item>
+    <item android:id="@android:id/secondaryProgress">
+        <clip>
+            <shape>
+                <corners android:radius="10dip" />
+
+                <stroke
+                    android:width="1px"
+                    android:color="@color/download_button_stroke" />
+
+                <gradient
+                    android:angle="270"
+                    android:centerColor="#ff3587e3"
+                    android:centerY="0.75"
+                    android:endColor="#ff3587e3"
+                    android:startColor="#ff3587e3" />
+            </shape>
+        </clip>
+    </item>
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <corners android:radius="10dip" />
+
+                <stroke
+                    android:width="1px"
+                    android:color="@color/download_button_stroke" />
+
+                <solid android:color="@color/download_button_solid_downloading" />
+
+                <gradient
+                    android:angle="270"
+                    android:centerColor="@color/download_button_solid_downloading"
+                    android:centerY="0.75"
+                    android:endColor="@color/download_button_solid_downloading"
+                    android:startColor="@color/download_button_solid_downloading" />
+            </shape>
+        </clip>
+    </item>
+
+</layer-list>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <include
+        layout="@layout/oc_loading_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        />
+    
+	 <RelativeLayout 
+        android:id="@+id/new_search_body"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#f7f7f7"
+        >
+        <TextView
+            android:id="@+id/new_search_edit"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@drawable/search_edittext_selector"
+            android:layout_marginLeft="25dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/new_search_icon"
+            android:hint="大家都在搜：浏览器"
+            android:paddingLeft="10dp"
+            android:gravity="center_vertical"
+            />
+        <ImageView
+            android:id="@+id/new_search_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_search_black_disable"
+            />
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="#d2d2d2"
+            />
+    </RelativeLayout>
+    
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/xlv_new_apps"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F7F7F7"
+        android:layout_below="@id/new_search_body"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:fadingEdge="none"
+        android:listSelector="@android:color/transparent"
+        />
+
+    <TextView
+        android:id="@+id/tv_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="15dip"
+        android:text="@string/list_empty"
+        android:textSize="22sp"
+        android:visibility="gone"/>
+</RelativeLayout>

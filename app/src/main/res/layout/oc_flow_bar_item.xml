@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_flow_pic"
+        android:layout_width="match_parent"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        android:layout_height="@dimen/oc_flow_bar_height"
+        android:src="@drawable/adv_image_1"/>
+
+    <include layout="@layout/oc_flow_bar_item_detail"
+        />
+
+</RelativeLayout>

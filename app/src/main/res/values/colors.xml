@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="helf_transparent_background">#50000000</color>
+    <color name="transparent">#00000000</color>
+    <!-- textView 字体 -->
+    <color name="color_tv">#a3a3a3</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray_line">#D7D7D7</color>
+    <color name="gray">#b9b9b9</color>
+    <color name="green">#ff00d719</color>
+    <color name="purple">#576B95</color>
+    <color name="primarybar_background">#FCFCFC</color>
+    <color name="primarybar_split_color">#D6D6D6</color>
+    <color name="blue">#3588e4</color>
+    <color name="actionbar_item_background_normal">@color/transparent</color>
+    <color name="actionbar_item_background_pressed">#20b2aa</color>
+    <color name="actionbar_background">#3588e4</color>
+    <color name="window_background">#3588e4</color>
+    <color name="vpi_bg">#0eb4f2</color>
+    <color name="CS_blue">#28c0c6</color>
+    <color name="download_button_stroke">#67D3D7</color>
+    <color name="download_button_solid">#F5FCFC</color>
+    <color name="download_button_solid_downloading">#BAE7E9</color>
+    <color name="download_manager_list_background">#F7F7F7</color>
+    <color name="text_color_black">#000000</color>
+    <color name="app_title_background_color">#2C9195</color>
+
+</resources>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/download_manager_list_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_oc_activity_download_title"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/app_title_background_color" >
+
+        <TextView
+            android:id="@+id/oc_activity_download_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/tab_download_manager_title"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/oc_activity_download_title_num"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/oc_activity_download_title"
+            android:background="@drawable/oc_activity_download_or_update_num_bg"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/lv_download_task"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            android:text="@string/download_task"
+            android:textColor="#7c7c7c"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/lv_download_task_begin_pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            android:text="@string/download_all_start"
+            android:textColor="#28c0c6"
+            android:textSize="13sp"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_download_apps"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/download_manager_list_background"
+        android:dividerHeight="6dp"
+        android:fadingEdge="none" />
+
+</LinearLayout>

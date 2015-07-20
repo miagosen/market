@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/search_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/bg_white">
+
+    <RelativeLayout
+        android:id="@+id/search_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/app_title_background_color">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toLeftOf="@+id/search_search_button" >
+
+            <EditText
+                android:id="@+id/search_edit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="8dp"
+                android:singleLine="true"
+                android:hint="请输入关键字，例如“捕鱼”"
+                android:textColorHint="#7ABABC"
+                android:textSize="16sp"
+                android:textColor="#E3F0F1"
+                android:background="@drawable/search_white_selector"/>
+
+            <ImageView
+                android:id="@+id/search_eidt_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="4dp"
+                android:src="@drawable/icon_delete_white" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/search_search_button"
+            android:layout_width="55dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="4dp"
+            android:src="@drawable/search_icon_selector" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/search_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/search_title_bar" >
+    </RelativeLayout>
+
+</RelativeLayout>

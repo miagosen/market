@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/download_manager_list_background"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/oc_activity_download_title"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/app_title_background_color"
+        android:gravity="center"
+        android:text="@string/none_network_title"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:id="@+id/oc_activity_none_network_setting"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="#FEF5F2" >
+
+        <ImageView
+            android:id="@+id/oc_activity_none_network_warning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:contentDescription="@string/none_network_warning"
+            android:src="@drawable/ic_warning" />
+
+        <TextView
+            android:id="@+id/oc_activity_none_network_warning_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/oc_activity_none_network_warning"
+            android:gravity="center_vertical"
+            android:text="@string/none_network_warning_text"
+            android:textColor="#F0460E"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@+id/oc_activity_none_network_arrow"
+            android:gravity="center_vertical"
+            android:text="@string/none_network_warning_text"
+            android:textColor="#938E8C"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/oc_activity_none_network_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:contentDescription="@string/none_network_warning"
+            android:src="@drawable/arrow_right" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#F0460E" />
+
+    <TextView
+        android:id="@+id/oc_activity_none_network_manager_app"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginLeft="16dp"
+        android:gravity="center_vertical"
+        android:text="@string/none_network_manager_app" />
+
+    <RelativeLayout
+        android:id="@+id/oc_activity_none_network_manager_apps"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/download_item_bg_selector"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical"
+            android:text="@string/none_network_manager_app" />
+
+        <ImageView
+            android:id="@+id/oc_activity_none_network_arrow_manager_app"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:contentDescription="@string/none_network_warning"
+            android:src="@drawable/arrow_right" />
+    </RelativeLayout>
+
+</LinearLayout>

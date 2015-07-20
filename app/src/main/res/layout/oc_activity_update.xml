@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/oc_activity_update_title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/app_title_background_color"
+        android:gravity="center"
+        android:text="@string/tab_update_apps_title"
+        android:textColor="@color/white" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tv_update_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            android:text="可更新"
+            android:textColor="#7c7c7c"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_update_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            android:text="全部更新"
+            android:textColor="#28c0c6"
+            android:textSize="13sp"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <include layout="@layout/oc_loading_view" />
+
+    <TextView
+        android:id="@+id/tv_no_update_app"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/no_update_apps"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/lv_update_apps"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="5dp" />
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_progress_button"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/progress_button_bg_normal"
+    android:clickable="true"
+    android:orientation="vertical" >
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:progressDrawable="@drawable/progress_bar_bg"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_download_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/oc_download"
+        android:textColor="@color/CS_blue"
+        android:textSize="12sp" />
+
+</RelativeLayout>

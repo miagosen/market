@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+       xmlns:oc="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/main_menu_search"
+        android:icon="@drawable/button_search"
+        android:showAsAction="always"
+        oc:showAsAction="always"
+        android:title="@string/action_bar_search"
+        android:visible="true"
+        />
+    <item
+        android:id="@+id/main_menu_download"
+        android:icon="@drawable/button_downloaded"
+        android:showAsAction="always"
+        oc:showAsAction="always"
+        android:title="@string/action_bar_download"
+        android:visible="true"
+        />
+    <item
+        android:id="@+id/main_menu_settings"
+        oc:showAsAction="always"
+        android:icon="@drawable/button_option"
+        android:showAsAction="always"
+        android:title="@string/action_bar_settings"
+        android:visible="true"
+        />
+
+</menu>

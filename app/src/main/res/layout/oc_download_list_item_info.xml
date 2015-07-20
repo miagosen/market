@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_item_body"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="48dip"
+            android:layout_height="48dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8.0dip"
+            android:layout_marginTop="4.0dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_launcher" />
+
+        <RelativeLayout
+            android:id="@+id/item_middle"
+            android:layout_width="fill_parent"
+            android:layout_height="58.0dip"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/btn_download_status"
+            android:layout_toRightOf="@+id/iv_icon"
+            android:paddingLeft="12.0dip"
+            android:paddingRight="12dp" >
+
+            <TextView
+                android:id="@+id/tv_download_item_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:clickable="false"
+                android:ellipsize="marquee"
+                android:fadingEdge="horizontal"
+                android:focusable="false"
+                android:maxLines="1"
+                android:paddingLeft="1dp"
+                android:paddingTop="4dip"
+                android:textSize="16.0sp" />
+
+            <ProgressBar
+                android:id="@+id/pb_download_item"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="3dip"
+                android:layout_below="@id/tv_download_item_title"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/progress_bar_bg"
+                android:indeterminate="false"
+                android:max="100"
+                android:padding="0dp"
+                android:progressDrawable="@drawable/probarstyle" />
+
+            <RelativeLayout
+                android:id="@+id/item_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_download_item_title"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="5dip" >
+
+                <TextView
+                    android:id="@+id/tv_download_progress"
+                    android:layout_width="130dip"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:gravity="left|bottom"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textSize="12.0sp" />
+
+                <TextView
+                    android:id="@+id/tv_download_item_size"
+                    android:layout_width="60dip"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:gravity="right|bottom"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textSize="12.0sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_download_status"
+            android:layout_width="@dimen/oc_flow_bar_item_btn_width"
+            android:layout_height="@dimen/ranking_btn_height"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:layout_centerVertical="true"
+            android:background="@color/green"
+            android:text="@string/oc_download" >
+        </Button>
+    </RelativeLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/primarybar_split_color" />
+    
+    <LinearLayout
+        android:id="@+id/detail_item_delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:layout_margin="5dp"
+        android:weightSum="1" >
+
+        <Button
+            android:id="@+id/item_delete_task"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:background="#3B90E7"
+            android:text="@string/delete_task"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/item_delete_history"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:background="#3B90E7"
+            android:text="@string/delete_history"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

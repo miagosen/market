@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/ll_popular_app_info"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_gray"
+        android:layout_height="@dimen/oc_popular_title_bar_height">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentTop="true"
+            android:background="@color/gray_line"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:paddingLeft="@dimen/oc_popular_padding_left"
+            android:layout_alignParentLeft="true"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="12sp"
+            android:drawablePadding="5dp"
+            android:drawableLeft="@drawable/icon_tip_1"
+            android:text="@string/oc_popular_app_info_title"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/gray_line"
+            />
+    </RelativeLayout>
+
+    <com.lx.market.ui.widget.HorizontalListView
+        android:id="@+id/hlv_popular_app"
+        android:layout_width="match_parent"
+        android:layout_height="112dp"
+        android:background="#ffffff"/>
+    <include layout="@layout/oc_home_app_list"/>
+</LinearLayout>

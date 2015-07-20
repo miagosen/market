@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:circleProgress="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="wrap_content"
+              android:layout_height="112dp"
+              
+    >
+	<LinearLayout 
+	    android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+	    android:layout_marginLeft="5dp"
+	    android:layout_marginRight="5dp"
+	    android:paddingLeft="4dp"
+	    android:paddingRight="4dp"
+	    android:paddingBottom="5dp"
+	    >
+    
+    
+    <com.lx.market.ui.widget.CircleProgressView
+        android:id="@+id/pbtn_icon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        circleProgress:max_progress="100"
+        circleProgress:arc_border_width="3dp"
+        android:background="@drawable/default_icon"
+        circleProgress:width_border="5dp"
+        circleProgress:layer_alpha="150"
+        />
+
+    <TextView
+        android:layout_width="72dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_app_name"
+        android:layout_marginTop="8dp"
+        android:singleLine="true"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#3A3A3A"
+        android:text="标题"
+        android:gravity="center"
+        android:textSize="16sp"/>
+    </LinearLayout>
+
+</LinearLayout>

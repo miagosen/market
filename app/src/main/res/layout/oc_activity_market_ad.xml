@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp" >
+
+                <ImageView
+                    android:id="@+id/market_ad_top_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/download_button_solid_downloading" />
+
+                <ImageView
+                    android:id="@+id/market_ad_back_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/oc_activity_market_ad_back_btn_selector"
+                    android:src="@drawable/button_back" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/market_ad_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="150dp"
+                android:paddingLeft="16dp"
+                android:text="@string/ceshi" />
+
+            <LinearLayout
+                android:id="@+id/ll_muti_check_app"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:orientation="horizontal"
+                android:weightSum="4" >
+
+                <com.lx.market.ui.widget.MutiCheckAppItemView
+                    android:id="@+id/muti_check_view_1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1" />
+
+                <com.lx.market.ui.widget.MutiCheckAppItemView
+                    android:id="@+id/muti_check_view_2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1" />
+
+                <com.lx.market.ui.widget.MutiCheckAppItemView
+                    android:id="@+id/muti_check_view_3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1" />
+
+                <com.lx.market.ui.widget.MutiCheckAppItemView
+                    android:id="@+id/muti_check_view_4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <com.lx.market.ui.widget.ProgressButton
+                android:id="@+id/pb_muti_check"
+                style="@style/download_button"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

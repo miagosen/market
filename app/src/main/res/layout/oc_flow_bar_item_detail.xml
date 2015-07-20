@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:id="@+id/rl_flow_flipper_item"
+                android:layout_height="@dimen/oc_flow_bar_height">
+
+    <ImageView
+        android:id="@+id/iv_flow_small_pic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/oc_blank"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/default_icon"
+        android:layout_above="@+id/tv_app_info_content"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/oc_flow_bar_text_title_height"
+        android:background="@color/helf_transparent_background"
+        android:textColor="@color/white"
+        android:layout_above="@+id/tv_app_info_content"
+        />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:text="这里是标题"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:maxLength="16"
+        android:layout_width="wrap_content"
+        android:minHeight="@dimen/oc_flow_bar_text_title_height"
+        android:textSize="@dimen/oc_flow_bar_title_text_size"
+        android:layout_above="@+id/tv_app_info_content"
+        android:gravity="center_vertical"
+        android:layout_toRightOf="@+id/iv_icon"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_app_info_content"
+        android:minHeight="@dimen/oc_flow_bar_text_content_height"
+        android:text="这里是内容这里是内容"
+        android:paddingBottom="@dimen/oc_flow_bar_item_bottom"
+        android:textColor="@color/oc_common_text_black"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom"
+        android:maxLength="16"
+        android:textSize="@dimen/oc_flow_bar_download_num_text_size"
+        android:layout_toRightOf="@+id/iv_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.lx.market.ui.widget.ProgressButton
+        android:id="@+id/btn_download"
+        android:layout_width="@dimen/oc_flow_bar_item_btn_width"
+        android:layout_height="@dimen/oc_flow_bar_item_btn_height"
+        android:layout_alignParentBottom="true"
+        android:text="@string/progress_btn_install"
+        android:layout_marginRight="@dimen/oc_picture_margin_bottom"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        />
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="@dimen/oc_icon"
+        android:layout_height="@dimen/oc_icon"
+        android:contentDescription="@string/oc_blank"
+        android:src="@drawable/ic_launcher"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="@dimen/oc_picture_margin_bottom"
+        />
+</RelativeLayout>
