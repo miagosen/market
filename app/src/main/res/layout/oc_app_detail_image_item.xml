@@ -3,13 +3,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
-    <ImageView
+    <com.lx.market.ui.photoview.PhotoView
         android:id="@+id/iv_app_detail_image"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="16dp"
-        android:scaleType="centerInside" />
+        android:layout_height="match_parent" />
 
 </LinearLayout>

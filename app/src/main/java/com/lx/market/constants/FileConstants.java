@@ -6,7 +6,7 @@ import java.io.File;
 
 public class FileConstants {
   // sd卡上的存放目录，以.开头为隐藏目录
-  public static final String FILE_ROOT = ".com.oz.market";
+  public static final String FILE_ROOT = ".com.lx.market";
   //SD卡根目录
   public static final String SDCARD = Environment.getExternalStorageDirectory().getPath();
   //图片缓存地址

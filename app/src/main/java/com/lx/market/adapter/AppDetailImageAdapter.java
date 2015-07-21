@@ -1,6 +1,5 @@
 package com.lx.market.adapter;
 
-import market.lx.com.R;
 import android.content.Context;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
@@ -8,9 +7,11 @@ import android.util.SparseArray;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 
 import com.lx.market.MarketApplication;
+import com.lx.market.ui.photoview.PhotoView;
+
+import market.lx.com.R;
 
 public class AppDetailImageAdapter extends PagerAdapter {
   private final Context           context;
@@ -40,18 +41,19 @@ public class AppDetailImageAdapter extends PagerAdapter {
     if (v == null) {
       vh = new ViewHolder();
       v = LayoutInflater.from(context).inflate(R.layout.oc_app_detail_image_item, null);
-      vh.iv = (ImageView) v.findViewById(R.id.iv_app_detail_image);
+      vh.iv = (PhotoView) v.findViewById(R.id.iv_app_detail_image);
       v.setTag(vh);
       pagers.put(position, v);
     } else {
       vh = (ViewHolder) v.getTag();
     }
+    // 需要使用 ControllerBuilder 方式请求图片
     MarketApplication.getInstance().imageLoader.displayImage(data[position], vh.iv);
     return v;
   }
 
   class ViewHolder {
-    ImageView iv;
+    PhotoView iv;
   }
 
   @Override

@@ -14,7 +14,6 @@ import market.lx.com.R;
 public class TopicFragment extends BaseFragment {
 
     private View contentView;
-
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
