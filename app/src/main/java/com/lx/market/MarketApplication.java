@@ -14,7 +14,7 @@ import android.widget.Toast;
 
 import com.lidroid.xutils.DbUtils;
 import com.lidroid.xutils.exception.DbException;
-import com.lx.market.config.OcMarketConfig;
+import com.lx.market.config.MarketConfig;
 import com.lx.market.constants.FileConstants;
 import com.lx.market.constants.GlobalConstants;
 import com.lx.market.model.DownloadInfo;
@@ -189,7 +189,7 @@ public class MarketApplication extends Application {
                 }
             }
         });
-        dbUtils.configDebug(OcMarketConfig.getInstance().isDebugMode());
+        dbUtils.configDebug(MarketConfig.getInstance().isDebugMode());
     }
 
     public static boolean isDownloadWIFIOnly() {

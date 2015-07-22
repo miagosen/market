@@ -2,7 +2,7 @@ package com.lx.market.utils;
 
 import android.util.Log;
 
-import com.lx.market.config.OcMarketConfig;
+import com.lx.market.config.MarketConfig;
 import com.lx.market.constants.FileConstants;
 
 import java.io.File;
@@ -21,7 +21,7 @@ public class Logger {
    */
   public static void error (String TAG, String msg, Throwable e) {
 	// 根据配置来判断是否打印日志
-	if (!OcMarketConfig.getInstance().isOpenLog())
+	if (!MarketConfig.getInstance().isOpenLog())
 	  return;
 	Log.e(TAG, msg, e);
   }
@@ -32,7 +32,7 @@ public class Logger {
    * @param msg
    */
   public static void error (String TAG, String msg) {
-	if (!OcMarketConfig.getInstance().isOpenLog())
+	if (!MarketConfig.getInstance().isOpenLog())
 	  return;
 	Log.e(TAG, msg);
   }
@@ -43,7 +43,7 @@ public class Logger {
    * @param msg
    */
   public static void error (String msg) {
-	if (!OcMarketConfig.getInstance().isOpenLog())
+	if (!MarketConfig.getInstance().isOpenLog())
 	  return;
 	Log.e(OpenSns, msg);
   }
@@ -52,7 +52,7 @@ public class Logger {
    * 调试信息
    */
   public static void debug (String TAG, String msg) {
-	if (!OcMarketConfig.getInstance().isOpenLog())
+	if (!MarketConfig.getInstance().isOpenLog())
 	  return;
 	Log.d(TAG, msg);
   }
@@ -61,37 +61,37 @@ public class Logger {
    * 调试信息
    */
   public static void debug (String msg) {
-	if (!OcMarketConfig.getInstance().isOpenLog())
+	if (!MarketConfig.getInstance().isOpenLog())
 	  return;
 	Log.d(OpenSns, msg);
   }
 
   public static void logD (String TAG, String str) {
-	if (!OcMarketConfig.getInstance().isOpenLog())
+	if (!MarketConfig.getInstance().isOpenLog())
 	  return;
 	Log.d(TAG, str);
   }
 
   public static void i (String TAG, String str) {
-	if (!OcMarketConfig.getInstance().isOpenLog())
+	if (!MarketConfig.getInstance().isOpenLog())
 	  return;
 	Log.i(TAG, str);
   }
 
   public static void d (String TAG, String str) {
-	if (!OcMarketConfig.getInstance().isOpenLog())
+	if (!MarketConfig.getInstance().isOpenLog())
 	  return;
 	Log.d(TAG, str);
   }
 
   public static void w (String TAG, String str) {
-	if (!OcMarketConfig.getInstance().isOpenLog())
+	if (!MarketConfig.getInstance().isOpenLog())
 	  return;
 	Log.w(TAG, str);
   }
 
   public static void e (String TAG, String str) {
-	if (!OcMarketConfig.getInstance().isOpenLog())
+	if (!MarketConfig.getInstance().isOpenLog())
 	  return;
 	Log.e(TAG, str);
   }
@@ -103,7 +103,7 @@ public class Logger {
    * @param str 内容 + 时间（自动生成）
    */
   public static void printLogToFile (String tag, String str) {
-	if (!OcMarketConfig.getInstance().isOpenLog())
+	if (!MarketConfig.getInstance().isOpenLog())
 	  return;
 	File dir = new File(FileConstants.SDCARD + FileConstants.FILE_ROOT + "/log");// 路径
 	if (!dir.exists()) {
@@ -144,7 +144,7 @@ public class Logger {
    * @param e
    */
   public static void p (Throwable e) {
-	if (OcMarketConfig.getInstance().isOpenLog()) {
+	if (MarketConfig.getInstance().isOpenLog()) {
 	  e.printStackTrace();
 	}
   }
